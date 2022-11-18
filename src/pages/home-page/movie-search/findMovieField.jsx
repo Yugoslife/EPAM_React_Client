@@ -2,8 +2,6 @@ import * as React from "react";
 import Grid from "@mui/material/Grid";
 import FreeSoloCreateOption from '../../../components/inputSearch'
 import SearchButtons from '../../../components/buttonSearch'
-import "./findMovieField.css"
-
 
 export default function FindMovieField() {
   return (
