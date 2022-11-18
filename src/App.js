@@ -1,21 +1,13 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/counter'
-import SearchAppBar from './components/searchField'
-import MainContainer from './layouts/mainContainer'
-import VariableWidthGrid from './layouts/variableWidthGrid'
+import MainContainer from './components/mainContainer'
+
 
 
 function App() {
   return (
     <div className="App">
-      <MainContainer>
-        <VariableWidthGrid>
-          <Counter />
-          <SearchAppBar />
-        </VariableWidthGrid>
-          
-      </MainContainer>
+      <MainContainer />
     </div>
   );
 }
