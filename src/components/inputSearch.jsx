@@ -4,11 +4,11 @@ import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 
 const filter = createFilterOptions();
 
-export default function FreeSoloCreateOption() {
+export default function InputSearch() {
   const [value, setValue] = React.useState(null);
 
   return (
-    <Autocomplete
+    <Autocomplete 
       value={value}
       onChange={(event, newValue) => {
         if (typeof newValue === 'string') {
@@ -42,7 +42,7 @@ export default function FreeSoloCreateOption() {
       selectOnFocus
       clearOnBlur
       handleHomeEndKeys
-      id="free-solo-with-text-demo"
+      id="free-text-demo"
       options={top100Films}
       getOptionLabel={(option) => {
         // Value selected with enter, right from the input
@@ -57,10 +57,10 @@ export default function FreeSoloCreateOption() {
         return option.title;
       }}
       renderOption={(props, option) => <li {...props}>{option.title}</li>}
-      sx={{ width: 300 }}
+      sx={{ width: 700}}
       freeSolo
       renderInput={(params) => (
-        <TextField {...params} label="Free solo with text demo" />
+        <TextField {...params} label="What do you want to watch?" className = "inputSearchMovie"/>
       )}
     />
   );

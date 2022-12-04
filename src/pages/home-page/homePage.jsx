@@ -4,12 +4,14 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
+
 import { boxContainer } from './cssStyledClasses'
 import { boxContainerSearch } from './cssStyledClasses'
 import { boxContainerRectangle } from './cssStyledClasses'
 import { boxContainerList } from './cssStyledClasses'
 import { boxContainerNetfixRoulette } from './cssStyledClasses'
-import MovieSearchContainer from './movie-search'
+import MovieSearchContainer from './movie-search/movieSearchContainer'
+import MovieListContainer from './movie-list/movieListContainer'
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -26,11 +28,13 @@ export default function HomePage() {
       <Grid container spacing={0}>
         <Grid item xs={12}>
         <Box id="bx0" sx={boxContainer}>
-          <Box id="bx1" sx={boxContainerSearch}>
+          <Box id="bx1" sx={boxContainerSearch} className='background_img'>
             <MovieSearchContainer />
           </Box>
           <Box id="bx2" sx={boxContainerRectangle}/>
-          <Box id="bx3" sx={boxContainerList}><Item>Movie List</Item></Box>
+          <Box id="bx3" sx={boxContainerList}>
+            <MovieListContainer/>
+            </Box>
           <Box id="bx4" sx={boxContainerNetfixRoulette}><Item>netfix roulette</Item></Box>
         </Box>
         </Grid>

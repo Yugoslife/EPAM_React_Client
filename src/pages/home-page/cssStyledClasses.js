@@ -1,13 +1,13 @@
 export const boxContainer = {
+    // maxWidth: 1170,
     width: '100%',
-    height: 1717,
-    // backgroundColor: '#232323',
+    height: 'auto',
+    backgroundColor: '#232323',
 };
 
 export const boxContainerSearch = {
     width: '100%',
-    height: 396,
-    backgroundColor: '',
+    height: 'auto',
 };
 
 export const boxContainerRectangle = {
@@ -18,7 +18,7 @@ export const boxContainerRectangle = {
 
 export const boxContainerList = {
     width: '100%',
-    height: 1200,
+    height: '800',
 };
 
 export const boxContainerNetfixRoulette = {

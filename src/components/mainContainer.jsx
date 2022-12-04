@@ -11,7 +11,7 @@ export default function MainContainer() {
       <CssBaseline />
       <Container fixed>
         <HomePage>
-            <Box sx={{ bgcolor: '#7a7d80', height: '100vh' }} />
+            <Box sx={{ bgcolor: '#7a7d80', height: 'auto' }} />
         </HomePage>
       </Container>
     </React.Fragment>

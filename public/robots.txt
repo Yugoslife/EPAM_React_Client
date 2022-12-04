@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+2022-11-23 23.00.03.jpg

@@ -1,12 +1,15 @@
-import * as React from 'react';
-import HeaderSearchMovie from './headerSearchMovie'
-import FindMovieField from './findMovieField'
+import * as React from "react";
+import Grid from '@mui/material/Stack';
+import HeaderSearchMovie from "./headerSearchMovie";
+import FindMovieField from "./findMovieField";
 
 export default function MovieSearchContainer() {
-    return (
-      <React.Fragment>
-        <div><HeaderSearchMovie /></div>
-        <div><FindMovieField /></div>
-      </React.Fragment>
-    );
-  }
+  return (
+    <React.Fragment>
+        <Grid >
+          <HeaderSearchMovie />
+          <FindMovieField />
+        </Grid>
+    </React.Fragment>
+  );
+}

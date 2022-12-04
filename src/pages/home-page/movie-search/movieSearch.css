@@ -1,0 +1,37 @@
+
+/* HEADER */
+.h3-custom {
+  margin-left: 60px;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 24px;
+  color: #f65261;
+}
+
+/* FIND MOVIE FIELD */
+.findMovieField {
+  margin-left: 120px;
+  padding-top: 32px;
+  padding-bottom: 160px;
+}
+
+.h1-сustom {
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* SEARCH FIELD */
+.background_img {
+  background: url("../../../assets/findMovieBackground.jpg");
+}
+
+.inputSearchMovie {
+  background: rgba(50, 50, 50, 0.8);
+  height: 56;
+  color: #ffffff;
+}
