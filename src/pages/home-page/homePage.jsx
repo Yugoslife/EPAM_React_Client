@@ -24,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function HomePage() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} >
       <Grid container spacing={0}>
         <Grid item xs={12}>
         <Box id="bx0" sx={boxContainer}>

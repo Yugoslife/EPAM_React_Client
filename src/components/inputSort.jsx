@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export default function SortFilms() {
+export default function InputSort() {
   const [sort, setSort] = React.useState('');
 
   const handleChange = (event) => {
@@ -14,7 +14,7 @@ export default function SortFilms() {
 
   return (
     <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
+      <FormControl fullWidth color='secondary'>
         <InputLabel id="demo-simple-select-label">SORT BY</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -31,3 +31,4 @@ export default function SortFilms() {
     </Box>
   );
 }
+
