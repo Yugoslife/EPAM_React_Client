@@ -1,3 +1,5 @@
+// homePage
+
 export const boxContainer = {
     // maxWidth: 1170,
     width: '100%',
@@ -26,3 +28,6 @@ export const boxContainerNetfixRoulette = {
     height: 70,
     backgroundColor: '#424242',
 };
+
+// addMovieForm
+

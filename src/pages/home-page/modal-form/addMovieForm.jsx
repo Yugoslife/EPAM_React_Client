@@ -2,14 +2,14 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
-// import DialogActions from '@mui/material/DialogActions';
-// import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from "@mui/material/DialogTitle";
 import { styled } from "@mui/material/styles";
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
-import BasicDatePicker from '../../../components/datePicker'
+import Typography from '@mui/material/Typography';
+import BasicDatePicker from "./datePicker";
+import SelectGener from './selectGener'
 
+import CongratModal from './congratulationsForm'
 
 const BootstrapButton = styled(Button)({
   marginRight: 60,
@@ -71,60 +71,84 @@ export default function AddMovieForm() {
       </BootstrapButton>
 
       <Dialog open={open} onClose={handleClose}>
-        <Box sx={{ width: "100%" }}>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
-            <Grid xs={12}>
-              <DialogTitle>ADD MOVIE</DialogTitle>{" "}
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2} justifyContent="space-between">
+            <Grid item xs={12}>
+            <Typography variant="h4" gutterBottom>ADD MOVIE</Typography>
             </Grid>
 
-            <Grid xs={6}>
+            <Grid item xs={6}>
               <TextField
                 autoFocus
                 margin="dense"
                 id="name"
                 label="TITLE"
-                type="email"
+                placeholder="Film name"
                 fullWidth
-                variant="standard"
+                variant="outlined"
               />
             </Grid>
-            <Grid>
-             <BasicDatePicker />
+            <Grid item xs={5}>
+              <BasicDatePicker />
             </Grid>
 
-            <Grid>
+            <Grid item xs={6}>
               <TextField
                 autoFocus
                 margin="dense"
                 id="name"
                 label="MOVIE URL"
+                placeholder="https//:"
                 type="url"
                 fullWidth
-                variant="standard"
+                variant="outlined"
               />
             </Grid>
-            <Grid></Grid>
-            {/* <DialogContent>
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            label="OVERVIEW"
-            type="email"
-            fullWidth
-            variant="standard"
-          />
-        </DialogContent>
-        <DialogActions> */}
-            <Grid xs={6}>
-              <Button onClick={handleClose}>RESET</Button>
-              <Button onClick={handleClose}>SUBMIT</Button>
+            <Grid item xs={5}>
+              <TextField
+                autoFocus
+                margin="dense"
+                id="name"
+                label="RATING"
+                placeholder="0.0"
+                type="url"
+                fullWidth
+                variant="outlined"
+              />
             </Grid>
-            {/* </DialogActions> */}
+
+            <Grid item xs={6}><SelectGener /></Grid>
+            <Grid item xs={5}>
+              <TextField
+                autoFocus
+                margin="dense"
+                id="name"
+                label="RUN TIME"
+                placeholder="0.0"
+                type="url"
+                fullWidth
+                variant="outlined"
+              />
+            </Grid>
+
+            <Grid item xs={12}>
+            <TextField
+                autoFocus
+                margin="dense"
+                id="overview"
+                label="OVERVIEW"
+                placeholder="Moana Waialiki is a sea voyaging enthusiast and the only daughter..."
+                type="url"
+                fullWidth
+                variant="outlined"
+              />
+            </Grid>
+            <Grid item xs={6}></Grid>
+
+            <Grid item xs={6}>
+              <Button onClick={handleClose}>Reset</Button>
+              <CongratModal/>
+            </Grid>
           </Grid>
         </Box>
       </Dialog>

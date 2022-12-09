@@ -1,68 +1,63 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 const FilterButton = styled(Button)({
-  boxShadow: 'none',
-  textTransform: 'none',
+  boxShadow: "none",
+  textTransform: "none",
   fontSize: 16,
-  padding: '6px 12px',
+  padding: "6px 12px",
   lineHeight: 1.5,
-  backgroundColor: 'transparent',
-  borderColor: 'transparent',
+  backgroundColor: "transparent",
+  borderColor: "transparent",
   fontFamily: [
-    '-apple-system',
-    'BlinkMacSystemFont',
+    "-apple-system",
+    "BlinkMacSystemFont",
     '"Segoe UI"',
-    'Roboto',
+    "Roboto",
     '"Helvetica Neue"',
-    'Arial',
-    'sans-serif',
+    "Arial",
+    "sans-serif",
     '"Apple Color Emoji"',
     '"Segoe UI Emoji"',
     '"Segoe UI Symbol"',
-  ].join(','),
-  '&:hover': {
-    backgroundColor: 'grey',
+  ].join(","),
+  "&:hover": {
+    backgroundColor: "grey",
 
-    boxShadow: 'none',
+    boxShadow: "none",
   },
-  '&:active': {
-    boxShadow: 'none',
-    backgroundColor: 'transparent',
-
+  "&:active": {
+    boxShadow: "none",
+    backgroundColor: "transparent",
   },
-  '&:focus': {
-    boxShadow: 'grey',
+  "&:focus": {
+    boxShadow: "grey",
   },
 });
-
 
 export default function CustomizedButtons() {
   return (
     <Stack spacing={2} direction="row">
       <FilterButton variant="contained" disableRipple>
-      ALL
+        ALL
       </FilterButton>
       <FilterButton variant="contained" disableRipple>
-      DOCUMENTARY
+        DOCUMENTARY
       </FilterButton>
       <FilterButton variant="contained" disableRipple>
-      COMEDY
+        COMEDY
       </FilterButton>
       <FilterButton variant="contained" disableRipple>
-      HORROR
+        HORROR
       </FilterButton>
       <FilterButton variant="contained" disableRipple>
-      CRIME
+        CRIME
       </FilterButton>
     </Stack>
   );
 }
-
-
-
 
 // import * as React from "react";
 // import Button from "@mui/material/Button";
