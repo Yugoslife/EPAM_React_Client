@@ -143,11 +143,14 @@ export default function AddMovieForm() {
                 variant="outlined"
               />
             </Grid>
-            <Grid item xs={6}></Grid>
+            
 
-            <Grid item xs={6}>
+            <Grid item xs={12} 
+            direction="row"
+            justifyContent="flex-end"
+            alignItems="center">
               <Button onClick={handleClose}>Reset</Button>
-              <CongratModal/>
+              <CongratModal handleCloseAddMovieModal={handleClose} />
             </Grid>
           </Grid>
         </Box>
