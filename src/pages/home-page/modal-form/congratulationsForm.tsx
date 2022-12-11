@@ -1,5 +1,4 @@
-import * as React from "react";
-import PropTypes from 'prop-types';
+import React, { FC } from 'react'
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -22,7 +21,10 @@ const style = {
   p: 4,
 };
 
-function CongratModal({handleCloseAddMovieModal}) {
+interface CongratModalType {
+  handleCloseAddMovieModal: ()=>void
+}
+const CongratModal: FC<CongratModalType> = ({ handleCloseAddMovieModal }) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -61,10 +63,6 @@ function CongratModal({handleCloseAddMovieModal}) {
       </Modal>
     </div>
   );
-}
-
-CongratModal.propTypes = {
-  handleCloseAddMovieModal: PropTypes.func
 }
 
 export default CongratModal

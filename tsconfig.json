@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": "./",
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "jsx": "react",
+      "lib": [
+        "es2020",
+        "dom"
+      ],
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "noEmitOnError": true,
+      "outDir": "dist",
+      "paths": {
+        "*": [
+          "src/*"
+        ]
+      },
+      "preserveConstEnums": true,
+      "removeComments": true,
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "target": "es2020",
+      "noImplicitAny": false
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  

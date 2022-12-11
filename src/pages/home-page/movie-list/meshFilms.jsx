@@ -1,9 +1,23 @@
-import * as React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 export default function MeshFilms() {
+  const [data, setData] = useState({ allMovies: [] });
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'https://hn.algolia.com/api/v1/search?query=redux',
+      );
+
+      setData(result.data);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <ImageList
       sx={{ width: "100%", height: 464 }}
