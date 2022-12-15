@@ -35,7 +35,9 @@ export default function HomePage() {
           <Box id="bx3" sx={boxContainerList}>
             <MovieListContainer/>
             </Box>
-          <Box id="bx4" sx={boxContainerNetfixRoulette}><Item>netfix roulette</Item></Box>
+          <Box id="bx4" sx={boxContainerNetfixRoulette}>
+            <Item>netfix roulette</Item>
+            </Box>
         </Box>
         </Grid>
       </Grid>

@@ -5,6 +5,7 @@ import FilterButtons from "../../../components/filterButtons";
 import InputSort from "../../../components/inputSort";
 import "./movieList.css";
 
+
 export default function FilterLine() {
   return (
     <Box sx={{ width: "100%" }}>

@@ -4,6 +4,7 @@ import Grid from "@mui/material/Stack";
 import FilterLine from "./filterLine";
 import MeshFilms from "./meshFilms";
 import "./movieList.css";
+import AxiosTest from './axiosTest'
 
 export default function MovieListContainer() {
   return (
@@ -13,6 +14,7 @@ export default function MovieListContainer() {
           <Grid item xs={6}>
             <FilterLine />
             <MeshFilms />
+            <AxiosTest/>
           </Grid>
         </Grid>
       </Box>
